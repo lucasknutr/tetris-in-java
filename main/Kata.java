@@ -1,8 +1,11 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Kata
 {
@@ -28,9 +31,21 @@ public class Kata
         return answer.toString();
     }
 
-    public static void main(String[] args) {
-        int numb = Integer.parseInt(JOptionPane.showInputDialog("Enter a number: "));
-        System.out.println(numb);
-        JOptionPane.showMessageDialog(null, expandedForm(numb));
+
+       public static void main(String[] args) {
+//        int numb = Integer.parseInt(JOptionPane.showInputDialog("Enter a number: "));
+//
+//        // Numb
+//        System.out.println(numb);
+//        JOptionPane.showMessageDialog(null, expandedForm(numb));
+//        JOptionPane.showMessageDialog(null, "Done", "Confirmed", JOptionPane.QUESTION_MESSAGE);
+//        JOptionPane.showOptionDialog(null, "Do you want to continue?", "Continue?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+//        JOptionPane.showInternalConfirmDialog(null, "Confirmed. Thank you!");
+//        Locale location = JPanel.getDefaultLocale();
+//        System.out.println(location);
+//        int randomNumber = new Random().nextInt(5000);
+//        System.out.println(randomNumber);
+//        JOptionPane.showMessageDialog(null, expandedForm(randomNumber));
+//        JPanel.getDefaultLocale();
     }
 }
