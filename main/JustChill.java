@@ -1,7 +1,6 @@
 package main;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 public class JustChill {
@@ -55,11 +54,27 @@ public class JustChill {
         return str.equals(reverse);
     }
 
-    
+    public static int maxSubArray(int[] nums) {
+        int max = nums[0];
+        int sum = 0;
+
+        for(int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            if(sum > max) {
+                max = sum;
+            }
+            if(sum < 0) {
+                sum = 0;
+            }
+        }
+        return max;
+    }
+
     public static void main(String[] args){
-        String roman = JOptionPane.showInputDialog("Enter a roman number: ");
-        int answer2 = romanToInteger(roman);
-        System.out.println(answer2);
+        int [] b = {1, 2, 3, -1, -10, 5, 25};
+//       System.out.println(Arrays.stream(b).min().getAsInt());
+//       maxSubArray(b);
+       System.out.println(maxSubArray(b));
     }
 }
 
